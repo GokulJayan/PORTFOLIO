@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="icon" href="logo.JPG" type="image/icon type">
+    <title>Gokul Jayan</title>
+    <link rel="icon" href="logo.JPG" type="image/icon type"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <header class="bg-primary">
-        <div class="row">
-
-            <div class="col-md-6 col-9 p-3 pl-5">
+        <div class="row w-75">
+            <div class="col-md-5 col-9 p-3 pl-5">
                 <h2 class="text-white">Gokul Jayan</h2>
             </div>
 
             <div class="col-md-6 col-3 my-auto">
-                <nav class="navbar navbar-expand-lg navbar-light">
+                <nav class="navbar navbar-expand-lg navbar-light" style="margin-left: 16cm;">
                     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
@@ -31,6 +32,9 @@
                           <a class="nav-link text-white" href="#qualifications">Qualifications</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link text-white" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-white" href="#projects">Projects</a>
                         </li>
                         <li class="nav-item">
@@ -40,7 +44,6 @@
                     </div>
                   </nav>
             </div>
-
         </div>
     </header>
 
@@ -67,7 +70,7 @@
 
     <section class="bg-primary p-5 align-items-center" id="qualifications">
         <div class="container align-items-center">
-            <h1 class="text-center">Qualifications</h1><br>
+            <h1 class="text-center mr-5 text-white">Qualifications</h1><br>
 
             <div class="row">
                 <div class="col-md-4">
@@ -107,9 +110,75 @@
         </div>
     </section>
     
+
+
+
+
+    <section class="bg-success p-5 align-items-center" id="skills">
+        <div class="container align-items-center">
+            <h1 class="text-center mr-5  text-white">Skills</h1><br>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center" style="width: 18rem; height:14.2rem">
+                        <i class='fas fa-code display-1 text-success pl-4 pr-4 mt-2' style='font-size:36px'></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Programming Languages</h5>
+                            <br>
+                            <p class="card-text">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/>
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> 
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> 
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> 
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center" style="width: 18rem;">
+                        <i class='fas fa-hashtag display-1 text-success pr-4 pl-4 mt-2' style='font-size:36px'></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> 
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> 
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> 
+                                <br><br>
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> 
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> 
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center" style="width: 18rem;height:14.2rem">
+                        <i class='fas fa-database display-1 text-success p-2' style='font-size:36px'></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Database</h5>
+                            <br>
+                            <p class="card-text">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> 
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
     <section class="bg-danger p-5" id="projects">
         <div class="container">
-            <h1 class="text-center">My Projects</h1><br>
+            <h1 class="text-center mr-5  text-white">Projects</h1><br>
 
             <div class="row">
                 <div class="col-md-4">
@@ -150,21 +219,22 @@
     <section class="p-5" id="contact">
         <div class="container">
             <h1 class="text-center">Contact</h1><br>
-            <form>
+
+            <form onsubmit="sendMail(); return false">
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    <label for="inputEmail4">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name..." required>
                   </div>
 
                   <div class="form-group col-md-6">
-                    <label for="inputEmail4">Age</label>
-                    <input type="text" class="form-control" id="inputEmail4" placeholder="">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="">
                   </div>
 
                   <div class="form-group col-md-6">
                     <label for="inputEmail4">Mobile</label>
-                    <input type="phone" class="form-control" id="inputEmail4" placeholder="">
+                    <input type="number" class="form-control" id="mobile" placeholder="">
                   </div>
                 </div>
                 <div class="form-row">
@@ -172,7 +242,7 @@
 
                   <div class="form-group col-md-4">
                     <label for="inputState">State</label>
-                    <select id="inputState" class="form-control">
+                    <select id="state" class="form-control">
                       <option selected>Choose...</option>
                       <option>Andhra Pradesh</option>
                       <option>Arunachal Pradesh</option>
@@ -207,35 +277,36 @@
                   </div>
                   <div class="form-group col-md-6">
                     <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity">
+                    <input type="text" class="form-control" id="city">
                   </div>
                 </div>
                 
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputMessage">Message</label>
-                        <textarea class="form-control" cols="30" rows="10" placeholder="Type here....."></textarea>
+                        <textarea id="msg" class="form-control" cols="30" rows="10" placeholder="Type here..." required></textarea>
                     </div>
                 </div>
-                
-
+            
                 <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+            </form>
+
         </div>
     </section>
 
     <footer class="bg-dark">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center text-white">
-                    <a href="https://www.facebook.com/gokul.jayan.50/" class="fab fa-facebook"></a>
-                    <a href="https://www.instagram.com/_.calgon._/" class="fab fa-instagram"></a>
-                    <a href="https://twitter.com/GokulJayan12" class="fab fa-twitter"></a>
-                    <a href="https://github.com/GokulJayan" class="fab fa-github"></a>
-                    <a href="https://www.linkedin.com/in/gokul-jayan/" class="fab fa-linkedin"></a>
+                <div class="col-md-12 text-center text-white pt-3 pb-2">
+                    <a href="https://www.facebook.com/gokul.jayan.50/" class="fab fa-facebook fa-2x pr-1"></a>
+                    <a href="https://www.instagram.com/_.calgon._/" class="fab fa-instagram fa-2x  pr-1"></a>
+                    <a href="https://twitter.com/GokulJayan12" class="fab fa-twitter fa-2x  pr-1"></a>
+                    <a href="https://github.com/GokulJayan" class="fab fa-github fa-2x  pr-1"></a>
+                    <a href="https://www.linkedin.com/in/gokul-jayan/" class="fab fa-linkedin fa-2x  pr-1 pb-2"></a>
                     <br>
                     <i class="far fa-copyright"></i>
-                    <p">Copyrights</p> 
+                    Copyrights
+                    <br>
                     
                 </div>
             </div>
@@ -247,5 +318,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/949212ea46.js" crossorigin="anonymous"></script>
+    
+    <style>
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            margin: 0; 
+        }
+    </style>
+
+    <script>
+        function sendMail(){
+            Email.send({
+                SecureToken:"15adc783-c079-48f9-8bfd-520c5c89779f",
+                To : 'gokul.jayan9@gmail.com',
+                From : 'gokul.jayan9@gmail.com',
+                Subject : "Response from portfolio",
+                Body : "Name: "+document.getElementById("name").value
+                + "<br>Email: "+document.getElementById("email").value
+                + "<br>Mobile: "+document.getElementById("mobile").value
+                + "<br>State: "+document.getElementById("state").value
+                + "<br>City: "+document.getElementById("city").value
+                + "<br>Message: "+document.getElementById("msg").value
+            }).then(
+              message => {
+                console.log(message)
+                if (message=='OK') alert("Message sent successfully, Thankyou!")
+                else alert("ERROR!")
+            });
+        }
+    </script>
+
 </body>
 </html>
