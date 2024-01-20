@@ -1,8 +1,8 @@
 function sendMail(){
     Email.send({
-        SecureToken:"15adc783-c079-48f9-8bfd-520c5c89779f",
+        SecureToken:"e0c8819d-55a2-4ce7-8093-47464b9ef28e",
         To : 'gokul.jayan9@gmail.com',
-        From : 'gokul.jayan9@gmail.com',
+        From : 'gokul.99jayan@gmail.com',
         Subject : "Response from portfolio",
         Body : "Name: "+document.getElementById("name").value
         + "<br>Email: "+document.getElementById("email").value
